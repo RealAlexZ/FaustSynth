@@ -8,6 +8,9 @@ Welcome to FaustSynth, a dynamic monophonic MIDI waveform generator built using 
 - **Faust:** 2.40.0
 - **Plugin Gui Magic:** 1.4.1
 
+## User Interface
+<img width="668" alt="user_interface" src="https://github.com/RealAlexZ/FaustSynth/assets/97690118/cbf5dfae-8ba0-44bc-9207-b24896c6e97e">
+
 ## Features
 
 ### Waveform Generation
