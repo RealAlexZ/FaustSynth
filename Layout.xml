@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="#1E1E1E" border-color="#C0C0C0"
+                   display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View flex-direction="column" resizable="1" resize-corner="1" background-color="#333333"
+        tab-color="#333333" margin="0" padding="0" border="0" id="">
+    <View flex-direction="column" background-color="#333333" border="2"
+          border-color="#FFFFFF" margin="1" padding="0" id="">
+      <View min-height="" max-height="70" background-color="#333333" display="flexbox"
+            border-color="#FFFFFF" id="Osc Wave Types" lookAndFeel="Skeuomorphic">
+        <View min-height="" max-height="70" background-color="#333333" display="contents"
+              border-color="#FFFFFF" id="Osc1 Wave Type" lookAndFeel="Skeuomorphic">
+          <ComboBox parameter="osc1Type" flex-align-self="center" caption="Osc 1 Wave Type: "
+                    min-height="50" caption-placement="centred-left" max-height="50"
+                    background-color="#4D4D4D" border-color="#C0C0C0" border="1"
+                    min-width="100" margin="1" padding="4" pos-height="100%" lookAndFeel="Skeuomorphic"
+                    pos-x="" pos-y=""/>
+        </View>
+        <View min-height="" max-height="70" background-color="#333333" display="contents"
+              border-color="#FFFFFF" id="Osc2 Wave Type" lookAndFeel="Skeuomorphic">
+          <ComboBox parameter="osc2Type" flex-align-self="center" caption="Osc 2 Wave Type: "
+                    min-height="50" caption-placement="centred-left" max-height="50"
+                    background-color="#4D4D4D" border-color="#C0C0C0" border="1"
+                    min-width="100" margin="1" padding="4" pos-height="100%" lookAndFeel="Skeuomorphic"
+                    pos-x="" pos-y=""/>
+        </View>
+        <View min-height="" max-height="70" background-color="#333333" display="contents"
+              border-color="#FFFFFF" id="Filter Type" lookAndFeel="Skeuomorphic">
+          <ComboBox parameter="filterType" flex-align-self="center" caption="Filter Type:"
+                    min-height="50" caption-placement="centred-left" max-height="50"
+                    background-color="#4D4D4D" border-color="#C0C0C0" border="1"
+                    min-width="100" margin="1" padding="4" pos-height="100%" lookAndFeel="Skeuomorphic"
+                    pos-x="" pos-y=""/>
+        </View>
+      </View>
+      <View background-color="#333333" id="Osc Waveform" height="120%">
+        <View flex-direction="column" padding="4" margin="1" caption="Attack"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D"
+              pos-x="-1.7301%" pos-y="-6.94444%" pos-width="12.4567%" pos-height="100%">
+          <Slider parameter="attack" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="Decay"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="decay" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="Sustain"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="sustain" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="Release"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="release" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <Plot flex-grow="3" caption="Waveform" margin="1" padding="4" border="1"
+              background-color="#4D4D4D" pos-x="61.4508%" pos-y="-3.98406%"
+              pos-width="37.513%" pos-height="100%" source="osc1" plot-fill-color="FF7F8081"
+              plot-color="FFB5B5B5"/>
+      </View>
+      <View background-color="#333333" id="Sliders">
+        <View flex-direction="column" padding="4" margin="1" caption="Gain"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="gain" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="Osc2 Mix"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="osc2Mix" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="Filter Cutoff"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="cutoff" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="Osc2 Detune"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="detuneAmount" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="LFO Depth"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="lfoDepth" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+        <View flex-direction="column" padding="4" margin="1" caption="LFO Freq"
+              border="1" border-color="#C0C0C0" background-color="#4D4D4D">
+          <Slider parameter="lfoFreq" slider-type="rotary" default="0.1" min-value="0"
+                  max-value="1" interval="0.01" padding="0" margin="2" background-color="#4D4D4D"
+                  pos-x="-3.22581%" pos-y="1.5015%" pos-width="100%" pos-height="90.991%"
+                  lookAndFeel="Skeuomorphic"/>
+        </View>
+      </View>
+      <View min-height="" background-color="#333333" display="flexbox" border-color="#FFFFFF"
+            flex-grow="1.0" id="Keyboard" height="">
+        <KeyboardComponent background-color="#333333" pos-x="-0.896057%" pos-y="-4.06504%"
+                           pos-width="100%" pos-height="100%" padding="0" margin="0" border="0"
+                           border-color="#FFFFFF"/>
+      </View>
+    </View>
+  </View>
+</magic>
+ 
