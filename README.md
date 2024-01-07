@@ -3,11 +3,6 @@
 ## Overview
 Welcome to FaustSynth, a dynamic monophonic MIDI waveform generator built with the Faust programming language. This is the project deliverable for PAT 481: Independent Study with Professor John Granzow in Fall 2023.
 
-### Compiled With
-- **JUCE:** 7.0.8
-- **Faust:** 2.40.0
-- **Plugin Gui Magic:** 1.4.1
-
 ## User Interface
 <img width="668" alt="user_interface" src="https://github.com/RealAlexZ/FaustSynth/assets/97690118/cbf5dfae-8ba0-44bc-9207-b24896c6e97e">
 
@@ -34,3 +29,8 @@ Welcome to FaustSynth, a dynamic monophonic MIDI waveform generator built with t
 I would like to extend my heartfelt thanks to Dr. John Granzow, Dr. Julius Smith, Dr. Romain Michon, as well as the Faust Discord community for their invaluable support and contributions to this project. Their expertise, guidance, and encouragement have been instrumental in bringing this project to fruition.
 
 Again, thank you, Dr. Granzow, for your help and being a part of this wonderful journey!
+
+## Dependencies
+- **JUCE:** 7.0.8
+- **Faust:** 2.40.0
+- **Plugin Gui Magic:** 1.4.1
