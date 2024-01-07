@@ -9,21 +9,21 @@ Welcome to FaustSynth, a AU/VST monophonic MIDI waveform generator built with th
 ## Features
 
 ### Waveform Generation
-- **Waveform Types:** Sine, Square, Triangle, Sawtooth
+- **Waveform Types:** Sine, Square, Triangle, Sawtooth.
 
 ### Oscillator Mixing
-- **Dual Oscillators:** Mix Control for fine-tuning the balance between oscillators
+- **Dual Oscillators:** Mix Control for fine-tuning the balance between oscillators.
 
 ### Frequency and Detuning
-- **MIDI Note Input:** Precise pitch and frequency manipulation through MIDI note input
-- **Detune Feature:** Adjustable detune for sonic richness
+- **MIDI Note Input:** Precise pitch and frequency manipulation through MIDI note input.
+- **Detune Feature:** Adjustable detune for sonic richness.
 
 ### Amplitude Envelope
-- **ADSR Controls:** Customizable Attack, Decay, Sustain, and Release phases for amplitude envelope
+- **ADSR Controls:** Customizable Attack, Decay, Sustain, and Release phases for amplitude envelope.
 
 ### Filter Processing
-- **Filter Types:** Bypass, Lowpass, Highpass
-- **LFO Modulation:** Adjustable cutoff frequency with LFO modulation for tonal frequency depth
+- **Filter Types:** Bypass, Lowpass, Highpass.
+- **LFO Modulation:** Adjustable cutoff frequency with LFO modulation for tonal frequency depth.
 
 ## Acknowledgements
 I would like to extend my heartfelt thanks to Dr. John Granzow, Dr. Julius Smith, Dr. Romain Michon, as well as the Faust Discord community for their invaluable support and contributions to this project. Their expertise, guidance, and encouragement have been instrumental in bringing this project to fruition.
