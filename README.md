@@ -1,4 +1,4 @@
-# FaustSynth: Monophonic MIDI Waveform Generator
+# FaustSynth
 
 ## Overview
 Welcome to FaustSynth, a AU/VST monophonic MIDI waveform generator built with the Faust programming language. This is the project deliverable for PAT 481: Independent Study with Professor John Granzow in Fall 2023.
